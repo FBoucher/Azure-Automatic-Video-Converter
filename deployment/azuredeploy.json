@@ -16,17 +16,6 @@
         "description": "Function App Key to use for authorization of Webhook. You should replace this with the key you want to use for your Function application authorization"
       }
     },
-    "project": {
-      "type": "string",
-      "defaultValue": "advanced-vod-workflow",
-      "allowedValues": [
-        "advanced-vod-workflow",
-        "LiveAndVodDRMOperationsV3\\LiveAndVodDRMOperationsV3"
-      ],
-      "metadata": {
-        "description": "The project in the Media Services Functions samples to deploy. Choose the name that matches the folder name containing the functions samples that you wish to deploy."
-      }
-    },
     "sourceCodeRepositoryURL": {
       "type": "string",
       "defaultValue": "https://github.com/YOURGITHUBACCOUNTNAME/media-services-v3-dotnet-core-functions-integration",
@@ -95,7 +84,8 @@
     "functionsAppName": "[concat(toLower(parameters('functionsAppName')),'-',uniqueString(resourceGroup().id))]",
     "storageAccountid": "[resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName'))]",
     "storageAccountName": "[concat('azfnstorage',uniqueString(resourceGroup().id))]",
-    "hostingPlanName": "[concat(variables('functionsAppName'), '-plan')]"
+    "hostingPlanName": "[concat(variables('functionsAppName'), '-plan')]",
+    "projectFolderName": "src"
   },
   "resources": [
     {
@@ -162,7 +152,7 @@
             "[resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName'))]"
           ],
           "properties": {
-            "Project": "[parameters('project')]",
+            "Project": "[variables('projectFolderName')]",
             "FUNCTIONS_WORKER_RUNTIME": "dotnet",
             "FUNCTIONS_EXTENSION_VERSION": "~2",
             "WEBSITE_NODE_DEFAULT_VERSION": "10.14.1",

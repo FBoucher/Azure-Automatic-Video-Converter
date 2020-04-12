@@ -1,76 +1,40 @@
-# Contributing to Media Services v3 Functions for .NET Core
+# Contributing
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.microsoft.com.
+We appreciate contributions of any kind and acknowledge them on our [README][readme].  By participating 
+in this project, you agree to abide by our [code of conduct](CODE_OF_CONDUCT.md).
 
-When you submit a pull request, a CLA-bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
+## Any enhancements/bugs/etc you see?
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+Add an issue.  We'll review it, add labels and reply within a few days.
 
- - [Code of Conduct](#coc)
- - [Issues and Bugs](#issue)
- - [Feature Requests](#feature)
- - [Submission Guidelines](#submit)
+## See an issue you'd like to work on?
 
-## <a name="coc"></a> Code of Conduct
-Help us keep this project open and inclusive. Please read and follow our [Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
+Comment on the issue that you'd like to work on it 
+and we'll add the `claimed` label.  If you see the `claimed` label already on the issue you 
+might want to ask the contributor if they'd like some help.
 
-## <a name="issue"></a> Found an Issue?
-If you find a bug in the source code or a mistake in the documentation, you can help us by
-[submitting an issue](#submit-issue) to the GitHub Repository. Even better, you can
-[submit a Pull Request](#submit-pr) with a fix.
+## Documentation/etc need updating?
 
-## <a name="feature"></a> Want a Feature?
-You can *request* a new feature by [submitting an issue](#submit-issue) to the GitHub
-Repository. If you would like to *implement* a new feature, please submit an issue with
-a proposal for your work first, to be sure that we can use it.
+Go right ahead! Just submit a pull request when you're done.
 
-* **Small Features** can be crafted and directly [submitted as a Pull Request](#submit-pr).
 
-## <a name="submit"></a> Submission Guidelines
+## Pull Requests
 
-### <a name="submit-issue"></a> Submitting an Issue
-Before you submit an issue, search the archive, maybe your question was already answered.
+We love pull requests from everyone. 
 
-If your issue appears to be a bug, and hasn't been reported, open a new issue.
-Help us to maximize the effort we can spend fixing issues and adding new
-features, by not reporting duplicate issues.  Providing the following information will increase the
-chances of your issue being dealt with quickly:
+Fork, then clone the repo:
 
-* **Overview of the Issue** - if an error is being thrown a non-minified stack trace helps
-* **Version** - what version is affected (e.g. 0.1.2)
-* **Motivation for or Use Case** - explain what are you trying to do and why the current behavior is a bug for you
-* **Browsers and Operating System** - is this a problem with all browsers?
-* **Reproduce the Error** - provide a live example or a unambiguous set of steps
-* **Related Issues** - has a similar issue been reported before?
-* **Suggest a Fix** - if you can't fix the bug yourself, perhaps you can point to what might be
-  causing the problem (line of code or commit)
+    git clone git@github.com:your-username/Azure-Auto-Video-Converter.git
 
-You can file new issues by providing the above information at the corresponding repository's issues link: https://github.com/[organization-name]/[repository-name]/issues/new].
+Push to your fork and [submit a pull request](https://github.com/fboucher/Azure-Auto-Video-Converter/compare/) against the `dev` branch.
 
-### <a name="submit-pr"></a> Submitting a Pull Request (PR)
-Before you submit your Pull Request (PR) consider the following guidelines:
+At this point you're waiting on us. We like to at least comment on pull requests
+within three days (and, typically, one day). We may suggest
+some changes or improvements or alternatives.
 
-* Search the repository (https://github.com/[organization-name]/[repository-name]/pulls) for an open or closed PR
-  that relates to your submission. You don't want to duplicate effort.
+Some things that will increase the chance that your pull request is accepted:
 
-* Make your changes in a new git fork:
+* Update [README][readme] with any needed changes
+* Write a [good commit message](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html).
 
-* Commit your changes using a descriptive commit message
-* Push your fork to GitHub:
-* In GitHub, create a pull request
-* If we suggest changes then:
-  * Make the required updates.
-  * Rebase your fork and force push to your GitHub repository (this will update your Pull Request):
-
-    ```shell
-    git rebase master -i
-    git push -f
-    ```
-
-That's it! Thank you for your contribution!
+[readme]: README.md
